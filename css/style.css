@@ -1,0 +1,181 @@
+ @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+ /*start global rules */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -wibkit-box-sizing:border-box;
+    -moz-box-sizing: border-box;
+}
+:root {
+    --VeryDarkMagenta: hsl(300, 43%, 22%);
+    --SoftPink: hsl(333, 80%, 67%);
+    --DarkGrayishMagenta: hsl(303, 10%, 53%);
+    --LightGrayishMagenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+html{
+    scroll-behavior: smooth;
+}
+h1,h2,h3,h4,h5{
+    margin: 0;
+}
+p{
+    font-size: 15px;
+}
+ /*start global rules */
+
+body  {
+    font-family: 'League Spartan', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--LightGrayishMagenta);
+    min-height: 100vh;
+}
+main{
+    max-width: 80%;
+    background-color: var(--White);
+    background-image:url(../images/bg-pattern-bottom-mobile.svg);
+    background-position: top  ;
+    background-image:url(../images/bg-pattern-top-desktop.svg);
+    background-position: bottom ;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 5rem 5rem;
+}
+section{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem; 
+    margin-bottom: 3rem ; 
+}
+section .more{
+    flex-basis: 40%;
+    margin-bottom: 1rem;
+}
+section .more .more-title{
+    color: var(--VeryDarkMagenta);
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+section .more .more-desc{
+    line-height: 1.3;
+    color: var(--DarkGrayishMagenta);
+    font-weight: 700;
+}
+section .rated{
+    flex-basis: 40%;
+}
+
+section .rated .rated-item{
+    background-color: var(--LightGrayishMagenta);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 0.8rem;
+    padding: 1rem;
+    border-radius: 0.6rem;
+}
+section .rated .rated-item:first-child{
+    transform: translateX(-50px);
+}
+section .rated .rated-item:nth-child(2){
+    transform: translateX(-25px);
+}
+.rated .rated-item .rated-stars{
+    display: flex;
+    gap: 0.5rem;  
+}
+.rated .rated-item .stars-desc{
+    color: var(--VeryDarkMagenta);
+    font-weight: bold;
+}
+/*section 2 
+items  */
+.reviews-items{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 2rem;
+    padding: 1rem 0;
+}
+.reviews-items .reviews-item{
+   background-color: var(--VeryDarkMagenta);
+   border-radius: 0.5rem;
+   padding: 2rem;
+   transition: 0.3s; 
+   box-shadow: 0 0.125rem 0.9375rem 0.5rem rgba(0,0,0,0.1);/* box shadow  */;
+}
+.reviews-items .reviews-item:first-child{
+    transform: translateY(-10px);
+}
+.reviews-items .reviews-item:last-child{
+    transform: translateY(10px);
+} 
+.reviews-items .reviews-item:hover{
+    transform: scale(1.02);
+}
+.reviews-items .reviews-item .review-info{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.review-info img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border:1px solid var(--SoftPink) ;
+    
+}
+.review-info .review-details .name{
+  color: var(--LightGrayishMagenta);
+  margin-bottom: 0.5rem;
+}
+.review-info .review-details .typeOfCompte{
+    color: var(--SoftPink);
+  }
+.reviews-item p{
+    color: var(--White);
+    font-weight: 400;
+    line-height: 1.3;
+}
+/*mobile version  */
+@media (max-width : 1280px){
+    section .rated .rated-item{
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+@media (max-width :768px) {
+    body{
+        background-image:bottom url(../images/bg-pattern-top-mobile.svg);
+        background-image:top url(../images/bg-pattern-bottom-mobile.svg);
+    }
+    main{
+       padding: 5rem 2rem;
+       max-width: 100%;
+    }
+    section{
+       flex-direction: column;
+       justify-content: center;
+       text-align: center;
+       margin-bottom: 2rem;
+    }
+    section .more .more-title{
+        font-size: 2.5rem;
+    }
+    section .rated .rated-item:first-child,
+    section .rated .rated-item:nth-child(2){
+       transform: translateX(0px);
+    }
+    /*section 2 */
+    .reviews-items{
+        gap: 0.5rem;
+    }
+
+}
+
