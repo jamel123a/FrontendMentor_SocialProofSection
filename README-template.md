@@ -12,9 +12,8 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
+- 
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -33,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/jamel123a/FrontendMentor_SocialProofSection)
+- Live Site URL: [Add live site URL here](https://frontendmentor-socialproofsection2.netlify.app/)
 
 ## My process
 
@@ -46,12 +45,9 @@ Users should be able to:
 - CSS Grid
 - CSS Transform
 
-
 ### What I learned
 
-
 upgrade my skill in css
-
 
 ### Continued development
  
@@ -59,7 +55,7 @@ upgrade my skill in css
 
 ## Author
 
-- Website - [Here](https://www.your-site.com)
+
 - Frontend Mentor - [@Jamel Issaoui](https://www.frontendmentor.io/profile/jamel123a)
 - Linkedin - [@Jamel Issaoui](https://www.linkedin.com/in/issaoui-jamel/)
 
